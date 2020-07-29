@@ -4,4 +4,44 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: #2b1383;
+  z-index: 1;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.navbar .navbar-center {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+.navbar .navbar-center .navbar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .navbar-center .navbar-header .nav-icon {
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-center .navbar-header .nav-icon:hover {
+  color: #d8d0f8;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 /*# sourceMappingURL=App.css.map */
