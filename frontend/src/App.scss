@@ -30,6 +30,7 @@ $secondaryColor: rgb(209, 139, 8);
 
 .navbar-header {
   position: relative;
+  font-family: 'Ranchers', cursive;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -123,62 +124,3 @@ $secondaryColor: rgb(209, 139, 8);
     opacity: 1;
   }
 }
-
-//     .navbar-btn {
-//       visibility: hidden;
-//     }
-
-//     .nav-icon {
-//       color: white;
-//       visibility: hidden;
-//     }
-//     @media screen and (max-width: 810px) {
-//       .navbar-btn {
-//         background: transparent;
-//         border: none;
-//         cursor: pointer;
-//       }
-//       .nav-icon {
-//         color: white;
-//         @include mainTransition();
-//         visibility: visible;
-
-//         &:hover {
-//           color: $secondaryColor;
-//           transform: rotate(360deg);
-//         }
-//       }
-//     }
-//   }
-
-//   @media screen and (max-width: 810px) {
-//     .navbar-links {
-//       height: 0;
-//       overflow: hidden;
-//       list-style-type: none;
-//     }
-//   }
-//   .navbar-links {
-//     position: fixed;
-//     top: 15px;
-//     right: 10vw;
-//     list-style-type: none;
-
-//     li {
-//       display: inline;
-//       margin: 8px;
-//     }
-
-//     a {
-//       color: white;
-//       text-decoration: none;
-//       font-weight: 600;
-//       font-size: 1.3rem;
-
-//       &:hover {
-//         color: $secondaryColor;
-//         @include mainTransition();
-//       }
-//     }
-//   }
-// }
