@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FaHandsHelping } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import './Navbar.scss';
 
 class Navbar extends Component {
   state = {
@@ -52,6 +53,12 @@ class Navbar extends Component {
               </li>
               <li>
                 <Link to="/my-orgs">My Orgs </Link>
+              </li>
+              <li>
+                <Link to="/events">Events </Link>
+              </li>
+              <li className="login-btn">
+                <Link to="/login">Sign up </Link>
               </li>
             </ul>
             <button
