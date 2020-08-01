@@ -1,20 +1,29 @@
 import React from 'react';
 import './App.scss';
-import Home from './pages/Home';
-import MyOrgs from './pages/MyOrgs';
 import Navbar from './components/Navbar/Navbar';
 
-import { Route, Switch } from 'react-router-dom';
+//Import each page to create a link for them
+import Home from './pages/Home';
+import MyOrgs from './pages/MyOrgs';
+import Events from './pages/Events';
+import SignUp from './pages/SignUp';
+import Error from './pages/Error';
+
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <section>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/my-orgs" component={MyOrgs} />
+        <Route exact path="/events" component={Events} />
+        <Route exact path="/login" component={SignUp} />
+        <Route exact path="/404" component={Error} />
+        <Redirect to="/404" />
       </Switch>
-    </>
+    </section>
   );
 }
 

@@ -1,0 +1,63 @@
+@import '../../App.scss';
+
+.login-container {
+  width: 50vw;
+  max-width: 500px;
+  height: 650px;
+  background: $primaryColor;
+  margin: 40px auto;
+  text-align: center;
+  color: white;
+  border-radius: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+
+  .login-items {
+    display: flex;
+    height: 350px;
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.signup-input {
+  background: white;
+  height: 50px;
+  width: 35vw;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 0.6rem;
+}
+
+.signup-btn {
+  background: $secondaryColor;
+  width: 90px;
+  // margin: 0 auto;
+  position: absolute;
+  left: 65px;
+  margin-top: 40px;
+  border-radius: 0.3rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.already-btn {
+  margin-top: 100px;
+
+  div {
+    background: white;
+    color: $primaryColor;
+    width: 300px;
+    margin: 12px auto;
+    width: 35vw;
+    max-width: 400px;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 0.3rem;
+  }
+}

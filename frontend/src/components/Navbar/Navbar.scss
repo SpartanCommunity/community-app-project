@@ -2,4 +2,11 @@
 .login-btn {
   background: orange;
   padding: 0.3rem;
+  border-radius: 0.2rem;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: white;
+    color: $primaryColor;
+  }
 }

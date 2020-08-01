@@ -10,38 +10,131 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
   background: #2b1383;
-  z-index: 1;
-}
-
-.navbar h1 {
+  z-index: 9;
   color: white;
 }
 
-.navbar .navbar-center {
-  max-width: 95vw;
-  margin: 0 auto;
-}
-
-.navbar .navbar-center .navbar-header {
+.navbar-header {
+  position: relative;
+  font-family: 'Ranchers', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  min-height: 8vh;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  z-index: 10;
 }
 
-.navbar .navbar-center .navbar-header .nav-icon {
+.navbar-btn {
+  display: none;
+}
+
+.navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 25vw;
+  list-style-type: none;
+}
+
+.navbar-links a {
   color: white;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  font-weight: 550;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #d18b08;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.navbar .navbar-center .navbar-header .nav-icon:hover {
-  color: #d8d0f8;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+@media screen and (max-width: 810px) {
+  body {
+    overflow-y: hidden;
+  }
+  .navbar-links {
+    position: fixed;
+    right: 0px;
+    height: 5vh;
+    width: 100vw;
+    top: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+  }
+  .transition-div {
+    position: fixed;
+    right: 0px;
+    height: 5vh;
+    width: 100vw;
+    top: 8vh;
+    background: #2b1383;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    z-index: 0;
+  }
+  .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  .navbar-btn {
+    display: block;
+    background: #2b1383;
+    border: none;
+    cursor: pointer;
+  }
+  .nav-icon {
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-icon:hover {
+    color: #d18b08;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=App.css.map */
