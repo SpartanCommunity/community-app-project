@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 
 //Import each page to create a link for them
 import Home from './pages/Home';
-import MyOrgs from './pages/MyOrgs';
+import Orgs from './pages/Orgs';
 import Events from './pages/Events';
 import SignUp from './pages/SignUp';
 import Error from './pages/Error';
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/my-orgs" component={MyOrgs} />
+        <Route exact path="/orgs" component={Orgs} />
         <Route exact path="/events" component={Events} />
         <Route exact path="/login" component={SignUp} />
         <Route exact path="/404" component={Error} />

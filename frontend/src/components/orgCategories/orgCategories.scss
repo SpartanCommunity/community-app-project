@@ -1,0 +1,24 @@
+@import '../../App.scss';
+
+.org {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background: lighten($mainGrey, 10%);
+  transition: all 0.3s linear;
+  border-radius: 0.6rem;
+
+  img {
+    width: 250px;
+    height: 175px;
+  }
+
+  &:hover {
+    box-shadow: 5px 6px 13px black;
+    cursor: pointer;
+  }
+}

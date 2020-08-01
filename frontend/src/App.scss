@@ -1,6 +1,7 @@
 // VARIABLES //
 $primaryColor: rgb(43, 19, 131);
 $secondaryColor: rgb(209, 139, 8);
+$mainGrey: #cacaca;
 
 // MIXINS //
 @mixin mainTransition {
@@ -70,7 +71,7 @@ body {
   }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 768px) {
   body {
     overflow-y: hidden;
   }
@@ -115,7 +116,6 @@ body {
 
     &:hover {
       color: $secondaryColor;
-      transform: rotate(360deg);
     }
   }
 }
@@ -126,5 +126,21 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+.orgs-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.orgs-page {
+  text-align: center;
+  h1 {
+    color: $secondaryColor;
+    padding-bottom: 15px;
+
+    font-size: 2.2rem;
   }
 }

@@ -61,3 +61,12 @@
     border-radius: 0.3rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 500px;
+    input {
+      width: 450px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaHandsHelping } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
@@ -52,7 +52,7 @@ class Navbar extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/my-orgs">My Orgs </Link>
+                <Link to="/orgs">Orgs </Link>
               </li>
               <li>
                 <Link to="/events">Events </Link>
@@ -67,7 +67,7 @@ class Navbar extends Component {
               // onClick={this.navLinks}
               className="navbar-btn"
             >
-              <FaHandsHelping size={35} className="nav-icon" />
+              <FaBars size={35} className="nav-icon" />
             </button>
           </div>
         </div>
